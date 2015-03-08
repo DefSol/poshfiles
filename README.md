@@ -4,7 +4,12 @@ Powershell Profile
 To install simply run the following in Powershell
 
 <pre>
-git clone git@github.com:scottmuc/poshfiles %USERPROFILE%\Documents\WindowsPowershell
+https://github.com/DefSol/poshfiles.git %USERPROFILE%\Documents\WindowsPowershell
+</pre>
+
+<pre>
+This project is a fork of 
+[https://github.com/scottmuc/poshfiles](scottmuc/poshfiles)
 </pre>
 
 Features
