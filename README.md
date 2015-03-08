@@ -1,16 +1,15 @@
 Powershell Profile
 ==================
 
-To install simply run the following in Powershell
-
-<pre>
-https://github.com/DefSol/poshfiles.git %USERPROFILE%\Documents\WindowsPowershell
-</pre>
-
-
 This project is a fork of [scottmuc/poshfiles](https://github.com/scottmuc/poshfiles) - such inspiration.
 
-I plan to evelove this for my needs, so if you fin something you like, then fork away.
+I plan to evolve this for my needs, so if you like, then fork away. Let me know how you go.
+
+My style of work flow differes from Scot in that I prefer this repo to be outside of the PowerShell profile structure. This allows me to change scripts, perhaps test them mmmmm, before I then release.
+
+So my first code commit will be looking at how I can release a version to my PowerSHell profile. Something to think about no doubt.
+
+In the mean time, it will just be manually released, Oh the pain!
 
 Features
 --------
