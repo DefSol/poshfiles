@@ -7,10 +7,10 @@ To install simply run the following in Powershell
 https://github.com/DefSol/poshfiles.git %USERPROFILE%\Documents\WindowsPowershell
 </pre>
 
-<pre>
-This project is a fork of 
-[https://github.com/scottmuc/poshfiles](scottmuc/poshfiles)
-</pre>
+
+This project is a fork of [scottmuc/poshfiles](https://github.com/scottmuc/poshfiles) - such inspiration.
+
+I plan to evelove this for my needs, so if you fin something you like, then fork away.
 
 Features
 --------
