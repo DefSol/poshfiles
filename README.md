@@ -5,7 +5,7 @@ This project is a fork of [scottmuc/poshfiles](https://github.com/scottmuc/poshf
 
 I plan to evolve this for my needs, so if you like, then fork away. Let me know how you go.
 
-My style of work flow differes from Scot in that I prefer this repo to be outside of the PowerShell profile structure. This allows me to change scripts, perhaps test them mmmmm, before I then release.
+My style of work flow differes from Scott in that I prefer this repo to be outside of the PowerShell profile structure. This allows me to change scripts, perhaps test them mmmmm, before I then release.
 
 ~~So my first code commit will be looking at how I can release a version to my PowerShell profile. Something to think about no doubt.~~
 
