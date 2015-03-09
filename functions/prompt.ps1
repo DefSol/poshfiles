@@ -14,10 +14,12 @@ function prompt {
    # our theme 
    $cdelim = [ConsoleColor]::DarkCyan 
    $chost = [ConsoleColor]::Green 
-   $cloc = [ConsoleColor]::Cyan 
+   $cloc = [ConsoleColor]::Cyan
+   $DateTime = ([DateTime]::Now.ToString('yyyy-MM-dd HH:mm'))
 
-   write-host "$([char]0x0A7) " -n -f $cloc 
-   write-host ([net.dns]::GetHostName()) -n -f $chost 
+   write-host "$([char]0x0E6) " -n -f $cloc 
+   write-host ([net.dns]::GetHostName()) -n -f $chost
+   write-host ":$DateTime" -n -f $chost
    write-host ' {' -n -f $cdelim 
    write-host (shorten-path (pwd).Path) -n -f $cloc 
    write-host '}' -n -f $cdelim 

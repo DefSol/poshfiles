@@ -23,7 +23,7 @@ Resolve-Path $here\functions\*.ps1 |
 function which($name) { Get-Command $name | Select-Object Definition }
 function rm-rf($item) { Remove-Item $item -Recurse -Force }
 function touch($file) { "" | Out-File $file -Encoding ASCII }
-Set-Alias g gvim
+
 $TransientScriptDir = "$here\scripts"
 $UserBinDir = "$($env:UserProfile)\bin"
 
