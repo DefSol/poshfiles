@@ -11,7 +11,7 @@ My style of work flow differes from Scott in that I prefer this repo to be outsi
 
 ~~In the mean time, it will just be manually released, Oh the pain!~~
 
-Once the repo has been cloned you can run deploy.ps1 and this should bootstrap your profile. Reloading your profile should then pimp your porfile
+Once the repo has been cloned you can run deploy.ps1 and this should bootstrap your profile. Reloading your profile should then pimp your profile
 
 Features
 --------
