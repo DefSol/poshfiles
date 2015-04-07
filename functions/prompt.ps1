@@ -20,8 +20,9 @@ function prompt {
    write-host "$([char]0x0E6) " -n -f $cloc 
    write-host ([net.dns]::GetHostName()) -n -f $chost
    write-host ":$DateTime" -n -f $chost
-   write-host ' {' -n -f $cdelim 
-   write-host (shorten-path (pwd).Path) -n -f $cloc 
+   write-host ''
+   write-host '    {' -n -f $cdelim 
+   write-host (pwd).Path -n -f $cloc 
    write-host '}' -n -f $cdelim 
 
    $global:GitStatus = Get-GitStatus
