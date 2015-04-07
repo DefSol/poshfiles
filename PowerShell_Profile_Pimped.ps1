@@ -23,6 +23,7 @@ Resolve-Path $here\functions\*.ps1 |
 function which($name) { Get-Command $name | Select-Object Definition }
 function rm-rf($item) { Remove-Item $item -Recurse -Force }
 function touch($file) { "" | Out-File $file -Encoding ASCII }
+function tail($file) { Get-Content $file -Tail 20 -Wait}
 
 $TransientScriptDir = "$here\scripts"
 $UserBinDir = "$($env:UserProfile)\bin"
