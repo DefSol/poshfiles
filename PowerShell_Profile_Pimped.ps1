@@ -34,3 +34,5 @@ $UserBinDir = "$($env:UserProfile)\bin"
 $paths = @("$($env:Path)", $TransientScriptDir)
 gci $UserBinDir | % { $paths += $_.FullName }
 $env:Path = [String]::Join(";", $paths) 
+
+clear
