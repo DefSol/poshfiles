@@ -35,6 +35,4 @@ $UserBinDir = "$($env:UserProfile)\bin"
 # adds a transient script dir that I use for experiments
 $paths = @("$($env:Path)", $TransientScriptDir)
 gci $UserBinDir | % { $paths += $_.FullName }
-$env:Path = [String]::Join(";", $paths) 
-
-clear
+$env:Path = [String]::Join(";", $paths)
