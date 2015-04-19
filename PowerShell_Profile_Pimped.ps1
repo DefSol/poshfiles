@@ -7,9 +7,6 @@
 # ahh yes... this would be so nice if it was a built in variable
 $here = Split-Path -Parent $MyInvocation.MyCommand.Path
 
-# load all script modules available to us
-Get-Module -ListAvailable | ? { $_.ModuleType -eq "Script" } | Import-Module
-
 # function loader
 #
 # if you want to add functions you can added scripts to your
@@ -18,6 +15,10 @@ Get-Module -ListAvailable | ? { $_.ModuleType -eq "Script" } | Import-Module
 Resolve-Path $here\functions\*.ps1 | 
 ? { -not ($_.ProviderPath.Contains(".Tests.")) } |
 % { . $_.ProviderPath }
+
+#checks the host so we can load ISE specific modules
+$IsIseHost = ((Get-Host).Name -like '*ISE*')
+Load-DefaultModules $IsIseHost
 
 # inline functions, aliases and variables
 function which($name) { Get-Command $name | Select-Object Definition }

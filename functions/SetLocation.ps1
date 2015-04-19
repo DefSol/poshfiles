@@ -1,1 +1,4 @@
-Set-Location X:\Repo\Git
+if(Test-Path 'X:\Repo\Git'){
+    Set-Location X:\Repo\Git
+}
+
