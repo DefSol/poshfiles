@@ -17,14 +17,13 @@ function Load-DefaultModules{
         $IsISEHost = $false
     )
 
-    $defaultModules = @('PsGet', 'OneGet', 'Azure', 'ISE')
-    $defaultISEModules = @('FunctionExplorer', 'ISESciprtingGeek', 'PSharp', 'PsISEProjectExplorer', 'Pester')
-
-    $allmodules = Get-Module -ListAvailable
-    $defaultModules | Where-Object ($allmodules -contains $_)| Import-Module
+    $defaultModules = @('PsGet', 'OneGet', 'Azure')
+    $defaultISEModules = @('FunctionExplorer', 'ISEScriptingGeek', 'PSharp', 'PsISEProjectExplorer', 'Pester', 'ISE')
+    
+    $defaultModules | Import-Module
     
     if($IsISEHost){
-        $defaultISEModules | Where-Object ($allmodules -contains $_)| Import-Module
+        $defaultISEModules | Import-Module
     }
 
 }

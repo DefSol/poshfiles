@@ -17,6 +17,7 @@ Resolve-Path $here\functions\*.ps1 |
 % { . $_.ProviderPath }
 
 #checks the host so we can load ISE specific modules
+$IsIseHost = $false
 $IsIseHost = ((Get-Host).Name -like '*ISE*')
 Load-DefaultModules $IsIseHost
 
